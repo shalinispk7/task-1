@@ -4,24 +4,110 @@ padding:0;
 box-sizing:border-box;
 font-family: 'Roboto', sans-serif;
 }
-.project-sec{
+@media (min-width:320px) and (max-width:767px){
+	.project-sec{
+	background:url(../image/01.jpg);
+	margin-top: 50px;
+	position:relative;
+	}
+	.pro-card h2{
+		font-size:31px;
+	}
+	.container{
+	width:80%;
+	margin:auto;
+	}
+	.row{
+	padding-bottom: 100px;
+	}
+	.form-sec{
+	background:url(../image/02.jpg);
+	width:90%;
+	margin:auto;
+	position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+	}
+	form .name input{
+	margin-bottom: 15px;
+	}
+	.name input{
+	width:100%;
+	}
+}
+@media (min-width:768px) and (max-width:990px){
+	.project-sec{
+	background:url(../image/01.jpg);
+	margin-top: 50px;
+	}
+	.pro-card h2{
+		font-size:31px;
+	}
+	.container{
+	width:80%;
+	margin:auto;
+	}
+	.row{
+	padding-bottom: 100px;
+	}
+	.form-sec{
+	background:url(../image/02.jpg);
+	width:90%;
+	margin:auto;
+	position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+	}
+	form .name input{
+	    margin-bottom: 15px;
+	}
+	.name input{
+	width:100%;
+	}
+}
+@media (min-width:1000px){
+	.project-sec{
 	background:url(../image/01.jpg);
 	width:60%;
 	margin-top: 50px!important;
     position: relative;
     margin: auto;
-}
-.container{
+	}
+	.container{
 	width:80%;
 	margin:auto;
-}
-.row{
+	}
+	.row{
 	display:flex;
-}
-.col1{
+	}
+	.col1{
+		width:50%;
+		padding: 60px 0;
+	}
+	.pro-card h2{
+		font-size:31px;
+	}
+	.form-sec{
+	background:url(../image/02.jpg);
+	width:45%;
+	position:absolute;
+	top:65px;
+	right:50px
+	}
+	form .name{
+	display:flex;
+	padding-bottom: 15px;
+    gap: 10px;
+	}
+	.name input{
 	width:50%;
-	padding: 60px 0;
+	}
 }
+
+
+
 .pro-card{
 	padding:20px;
 }
@@ -32,7 +118,6 @@ font-family: 'Roboto', sans-serif;
     letter-spacing: 4px;
 }
 .pro-card h2{
-	font-size: 32px;
     padding-bottom: 12px;
     color: #fff;
     letter-spacing: 2px;
@@ -48,24 +133,12 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* FORM */
-.form-sec{
-	background:url(../image/02.jpg);
-	width:45%;
-	position:absolute;
-	top:68px;
-	right:50px
-}
+
 .form-card{
 	padding:20px;
 }
-form .name{
-	display:flex;
-	padding-bottom: 15px;
-    gap: 10px;
-	
-}
+
 .name input{
-	width:50%;
 	padding:10px;
 	border-radius: 5px;
     border: none;
